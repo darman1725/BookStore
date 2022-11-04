@@ -43,12 +43,12 @@ class RepositoryRequest extends FormRequest
     public function messages()
     {
         return [
-            'judul.required' => 'Judul dokumen tidak boleh kosong',
-            'tipe_id.required' => 'Jenis dokumen tidak boleh kosong',
-            'abstrak.required' => 'Abstrak dokumen tidak boleh kosong',
-            'abstrak.max' => 'Abstrak terlalu panjang.',
-            'file.required' => 'File dokumen tidak boleh kosong',
-            'file.max' => 'Ukuran file dokumen maksimal 5 MB',
+            'judul.required' => 'Judul buku tidak boleh kosong',
+            'tipe_id.required' => 'Jenis buku tidak boleh kosong',
+            'abstrak.required' => 'Abstrak buku tidak boleh kosong',
+            'abstrak.max' => 'Abstrak buku terlalu panjang.',
+            'file.required' => 'File buku tidak boleh kosong',
+            'file.max' => 'Ukuran file buku maksimal 5 MB',
             'file.mimes' => 'File harus berupa PDF',
         ];
     }

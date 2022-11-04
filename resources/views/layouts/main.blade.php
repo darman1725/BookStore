@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <link rel="shortcut icon" href="{{asset('img/polinema.png')}}" type="image/x-icon">
 
-    <title>@yield('title') - Repository App</title>
+    <title>@yield('title') - Book Store</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{asset('templates')}}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -45,7 +45,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Repository Kampus 2021</span>
+                        <span>Copyright &copy; Book Store Kampus Polinema 2022</span>
                     </div>
                 </div>
             </footer>

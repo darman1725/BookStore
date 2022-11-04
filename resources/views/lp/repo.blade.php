@@ -22,7 +22,7 @@
                     <div class="row justify-content-between">
                         <div class="col-10">
                             <div class="form-group w-100">
-                                <input type="text" class="form-control w-100 " id="keywords" name="keywords" placeholder="Cari repository" value="{{ old('keywords')}}" required>
+                                <input type="text" class="form-control w-100 " id="keywords" name="keywords" placeholder="Cari buku..." value="{{ old('keywords')}}" required>
                             </div>
                         </div>
                         <div class="col-2 text-right">

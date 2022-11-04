@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <title>@yield('title') - Repository</title>
+    <title>@yield('title') - Buku</title>
 </head>
 <body>
 
@@ -28,7 +28,7 @@
                         <a class="nav-link" href="{{route('lp.home')}}">Home</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{route('lp.repo')}}">Repository</a>
+                        <a class="nav-link" href="{{route('lp.repo')}}">Buku</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="{{route('lp.faq')}}">FAQ</a>

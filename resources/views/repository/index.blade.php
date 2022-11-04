@@ -10,7 +10,7 @@
 
     <div class="d-sm-flex align-items-center justify-content-between mb-2">
         <h1 class="h3 text-gray-800">Data Buku</h1>
-        <a href="{{route('repository.create')}}" class="btn btn-sm btn-primary shadow-sm"><i class="fas fa-plus fa-sm text-white-50"></i> Tambah Dokumen</a>
+        <a href="{{route('repository.create')}}" class="btn btn-sm btn-primary shadow-sm"><i class="fas fa-plus fa-sm text-white-50"></i> Tambah Buku</a>
     </div>
 
     <div class="row">
@@ -19,11 +19,11 @@
                 <div class="row justify-content-between">
                     <div class="col-10">
                         <div class="form-group w-100">
-                            <input type="text" class="form-control w-100 " id="keywords" name="keywords" placeholder="Cari repository" value="{{ old('keywords')}}" required>
+                            <input type="text" class="form-control w-100 " id="keywords" name="keywords" placeholder="Cari buku di sini..." value="{{ old('keywords')}}" required>
                         </div>
                     </div>
-                    <div class="col-2 text-right">
-                        <button type="submit" class="btn btn-primary btn-block">Cari</button>
+                    <div class="">
+                        <button type="submit" class="btn btn-sm btn-primary">Cari</button>
                     </div>
                 </div>
             </form>
@@ -51,9 +51,9 @@
                             <thead class="thead-light">
                                 <tr>
                                     <th scope="col" class="text-center">No</th>
-                                    <th scope="col" class="text-center">Judul Dokumen</th>
+                                    <th scope="col" class="text-center">Judul Buku</th>
                                     <th scope="col" class="text-center">Author</th>
-                                    <th scope="col" class="text-center">Jenis Dokumen</th>
+                                    <th scope="col" class="text-center">Jenis Buku</th>
                                     <th scope="col" class="text-center">Tanggal Terbit</th>
                                     <th scope="col" class="text-center">Abstrak</th>
                                     <th scope="col" class="text-center">Aksi</th>
@@ -62,7 +62,7 @@
                             <tbody>
                                 @if ($data->isEmpty())
                                 <tr class="text-center">
-                                    <td colspan="7">Data masih kosong.</td>
+                                    <td colspan="7">Data buku masih kosong.</td>
                                 </tr>
                                 @else
                                 @foreach ($data as $item)

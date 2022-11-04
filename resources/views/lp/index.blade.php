@@ -48,7 +48,7 @@
             </div>
             @endforeach
             <div class="col-12 my-3 text-center">
-                <a href="{{route('lp.repo')}}" class="btn btn-sm btn-outline-primary">Lihat semua repository</a>
+                <a href="{{route('lp.repo')}}" class="btn btn-sm btn-outline-primary">Lihat semua buku</a>
             </div>
             @endif
         </div>

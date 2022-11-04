@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Data Tipe Dokumen')
+@section('title', 'Data Jenis Buku')
 
 @section('content')
 <!-- Begin Page Content -->

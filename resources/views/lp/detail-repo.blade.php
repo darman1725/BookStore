@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 mb-4 text-center">
-                <h3>Detail Repository</h3>
+                <h3>Detail Buku</h3>
                 <hr>
             </div>
             <div class="col-md-8 mb-3">
@@ -21,7 +21,8 @@
                 </div>
                 <hr>
                 <p>{{$repo->abstrak}}</p>
-                <a href="{{ route('repository.download', $repo->id)}}" class="btn btn-sm btn-danger">Download File</a>
+                {{-- <a href="{{ route('repository.download', $repo->id)}}" class="btn btn-sm btn-danger">Download File</a> --}}
+                <a href="#" class="btn btn-sm btn-success">Beli Sekarang</a>
             </div>
             <div class="col-md-4">
                 <object data="{{asset('dokumen/' . $repo->file)}}" type="application/pdf" class="w-100" height="600" id="viewerPdf">

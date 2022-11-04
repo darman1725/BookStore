@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Data Tipe Dokumen')
+@section('title', 'Data Tipe Buku')
 
 @section('content')
 <!-- Begin Page Content -->
@@ -9,22 +9,22 @@
     <!-- Page Heading -->
 
     <div class="d-sm-flex align-items-center justify-content-between mb-2">
-        <h1 class="h3 text-gray-800">Data Tipe Dokumen</h1>
+        <h1 class="h3 text-gray-800">Data Tipe Buku</h1>
     </div>
 
     <div class="row">
         <div class="col-md-4">
             <div class="card shadow my-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Edit Tipe Dokumen</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Edit Jenis Buku</h6>
                 </div>
                 <div class="card-body">
                     <form action="{{route('tipe.update', $data->id)}}" method="POST">
                         @csrf
                         @method('PUT')
                         <div class="form-group">
-                            <label for="name">Jenis Dokumen</label>
-                            <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" placeholder="Masukkan jenis dokumen" value="{{ $data->name }}">
+                            <label for="name">Jenis Buku</label>
+                            <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" placeholder="Masukkan jenis buku..." value="{{ $data->name }}">
                             @error('name')
                             <small class="text-danger">{{ $message }}</small>
                             @enderror

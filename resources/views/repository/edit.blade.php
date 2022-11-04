@@ -24,23 +24,23 @@
         <div class="col-md-6">
             <div class="card shadow my-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Edit Dokumen</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Edit Buku</h6>
                 </div>
                 <div class="card-body">
                     <form action="{{route('repository.update', $data->id)}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
                         <div class="form-group">
-                            <label for="judul">Judul Dokumen</label>
-                            <input type="text" class="form-control @error('judul') is-invalid @enderror" id="judul" name="judul" placeholder="Masukkan judul dokumen" value="{{ $data->judul }}">
+                            <label for="judul">Judul Buku</label>
+                            <input type="text" class="form-control @error('judul') is-invalid @enderror" id="judul" name="judul" placeholder="Masukkan judul buku..." value="{{ $data->judul }}">
                             @error('judul')
                             <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="tipe_id">Jenis Dokumen</label>
+                            <label for="tipe_id">Jenis Buku</label>
                             <select name="tipe_id" id="tipe_id" class="form-control @error('tipe_id') is-invalid @enderror">
-                                <option selected disabled hidden>-- Pilih Jenis Dokumen --</option>
+                                <option selected disabled hidden>-- Pilih Jenis Buku --</option>
                                 @foreach ($tipes as $item)
                                 <option value="{{$item->id}}" {{$item->id == $data->tipe_id ? 'selected' : ''}}>{{$item->name}}</option>
                                 @endforeach
@@ -51,13 +51,13 @@
                         </div>
                         <div class="form-group">
                             <label for="abstrak">Abstrak</label>
-                            <textarea name="abstrak" id="abstrak" cols="30" rows="10" class="form-control @error('abstrak') is-invalid @enderror" placeholder="Masukkan abstrak dokumen" value="{{ old('abstrak')}}">{{$data->abstrak}}</textarea>
+                            <textarea name="abstrak" id="abstrak" cols="30" rows="10" class="form-control @error('abstrak') is-invalid @enderror" placeholder="Masukkan abstrak buku..." value="{{ old('abstrak')}}">{{$data->abstrak}}</textarea>
                             @error('abstrak')
                             <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="file">File Dokumen</label>
+                            <label for="file">File Buku</label>
                             <small class="form-text text-muted mb-1">*Upload file dengan format PDF dan ukuran file maksimal 5 MB</small>
                             <input type="file" class="form-control-file" id="file" name="file" accept="application/pdf">
                             <small class="form-text text-muted mb-1">*Abaikan upload file jika tidak ingin mengupdate file</small>
@@ -73,7 +73,7 @@
         <div class="col-md-6">
             <div class="card shadow my-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Preview Dokumen</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Preview Buku</h6>
                 </div>
                 <div class="card-body">
                     <object data="{{asset('dokumen/' . $data->file)}}" type="application/pdf" class="w-100" height="600" id="viewerPdf">
@@ -84,7 +84,7 @@
                         <div class="spinner-border text-primary" role="status">
                             <span class="sr-only">Loading...</span>
                         </div>
-                        Proses preview dokumen..
+                        Proses preview buku..
                     </div>
                     <div style="height:600px;overflow-y:scroll;display: none;" id="pdfViewer" class="w-100"></div>
                 </div>
@@ -130,7 +130,7 @@
                     // PDF loading error
                     $('#loading').hide()
                     $('#alert-view').show();
-                    $('#alert-view').html('Preview dokumen gagal. Silahkan ulangi input dokumen.');
+                    $('#alert-view').html('Preview buku gagal. Silahkan ulangi input buku.');
                 });
             };
             fileReader.readAsArrayBuffer(file);

@@ -17,7 +17,7 @@
         <div class="col-md-6">
             <div class="card shadow my-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Detail Dokumen</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Detail buku</h6>
                 </div>
                 <div class="card-body">
                     <ul class="list-group">
@@ -29,13 +29,13 @@
                         </li>
                         <li class="list-group-item">
                             <div class="row">
-                                <div class="col-md-4 font-weight-bold">Judul Dokumen</div>
+                                <div class="col-md-4 font-weight-bold">Judul Buku</div>
                                 <div class="col-md-8">{{$data->judul}}</div>
                             </div>
                         </li>
                         <li class="list-group-item">
                             <div class="row">
-                                <div class="col-md-4 font-weight-bold">Jenis Dokumen</div>
+                                <div class="col-md-4 font-weight-bold">Jenis buku</div>
                                 <div class="col-md-8">{{$data->tipe->name}}</div>
                             </div>
                         </li>
@@ -59,7 +59,7 @@
                         </li>
                         <li class="list-group-item">
                             <div class="row">
-                                <div class="col-md-4 font-weight-bold">Abstrak Dokumen</div>
+                                <div class="col-md-4 font-weight-bold">Abstrak Buku</div>
                                 <div class="col-md-8">{{$data->abstrak}}</div>
                             </div>
                         </li>
@@ -70,7 +70,7 @@
         <div class="col-md-6">
             <div class="card shadow my-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Preview Dokumen</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Preview Buku</h6>
                 </div>
                 <div class="card-body">
                     <object data="{{asset('dokumen/' . $data->file)}}" type="application/pdf" class="w-100" height="600">
