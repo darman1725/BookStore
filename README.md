@@ -2,7 +2,7 @@
 
 |  |  |
 |--|--|
-| Sertifikasi | SERTIKOM TSA Kominfo 2022 |
+| Sertifikasi | Sertifikasi - TSA Kominfo 2022 |
 | Tahun Ajaran | Ganjil 2022/2023 |
 | Skema | Web Developer |
 | Institusi | Politeknik Negeri Malang - (JTI) |
