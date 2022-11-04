@@ -37,7 +37,7 @@
             <li class="nav-item {{ Request::segment(1) === 'profile' ? 'active' : null }} ">
                 <a class=" nav-link" href="{{ route('profile.index')}}">
                     <i class="fas fa-fw fa-user"></i>
-                    <span>Data Profile Admin</span></a>
+                    <span>Data Profil Pribadi</span></a>
             </li>
 
             <li class="nav-item {{ Request::segment(1) === 'users' ? 'active' : null }} ">
