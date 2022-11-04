@@ -37,12 +37,18 @@
             <li class="nav-item {{ Request::segment(1) === 'profile' ? 'active' : null }} ">
                 <a class=" nav-link" href="{{ route('profile.index')}}">
                     <i class="fas fa-fw fa-user"></i>
-                    <span>Data Profile</span></a>
+                    <span>Data Profile Admin</span></a>
+            </li>
+
+            <li class="nav-item {{ Request::segment(1) === 'users' ? 'active' : null }} ">
+                <a class=" nav-link" href="{{ route('users.index')}}">
+                    <i class="fas fa-fw fa-address-book"></i>
+                    <span>Daftar Rincian User</span></a>
             </li>
 
             <li class="nav-item {{ Request::segment(1) === 'tipe' ? 'active' : null }} ">
                 <a class=" nav-link" href="{{ route('tipe.index')}}">
-                    <i class="fas fa-fw fa-file"></i>
+                    <i class="fas fa-fw fa-book"></i>
                     <span>Data Kategori Buku</span></a>
             </li>
 
@@ -52,11 +58,11 @@
                     <span>Data Buku</span></a>
             </li>
             @if (Auth::user()->role == "adm")
-            <li class="nav-item {{ Request::segment(1) === 'faq' ? 'active' : null }} ">
+            {{-- <li class="nav-item {{ Request::segment(1) === 'faq' ? 'active' : null }} ">
                 <a class=" nav-link" href="{{ route('faq.index')}}">
                     <i class="fas fa-fw fa-file"></i>
                     <span>Data FAQ</span></a>
-            </li>
+            </li> --}}
             @endif
 
             <!-- Divider -->

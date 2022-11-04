@@ -12,10 +12,10 @@
             </div>
               <div class="col-md-12">
                 <p>
-                    FAQ adalah singkatan dari Frequently Asked Questions yang berarti pertanyaan yang sering diajukan. 
-                    FAQ adalah daftar pertanyaan umum dan jawaban tentang topik tertentu. FAQ paling sering dibaca sebagai 
-                    huruf terpisah, yaitu “eff-ay-cue”. FAQ paling sering ditemukan di situs web dan email campaign. FAQ 
-                    yang paling efektif adalah FAQ yang mudah dinavigasi, menyajikan informasi yang detail dan ringkas, dan mudah diakses.
+                    Privacy policy atau sebutan lainnya adalah kebijakan privasi adalah halaman penting bagi sebuah website. Pasalnya kebijakan privasi ini berisikan tentang pernyataan hukum yang memungkinkan pengunjung website mengetahui dengan tepat data apa saja yang dikumpulkan website yang mereka kunjungi.
+                    <br><br>Termasuk bagaimana data tersebut digunakan dan apakah data tersebut dilindungi. Kebijakan privasi juga merupakan halaman yang memberitahu pengguna mengenai perincian tentang informasi mereka yang dikumpulkan di website tersebut apakah dirahasiakan atau dibagikan dengan mitra tertentu maupun entitas yang lainnya.
+                    <br><br>Pada intinya, privacy policy ini dibuat untuk membantu transparansi antara website dan pengunjung website. Keterbukaan tersebut menjadi bagian poin penting dalam meningkatkan kepercayaan pengunjung website Anda, sehingga kredibilitas website Anda lebih menyakinkan.
+                    <br><br>Adanya halaman kebijakan privasi ini, membantu menghadirkan perasaan aman ketika pengunjung mengunjungi website Anda. Karena setiap pengunjung bisa mengetahui data apa saja yang dikumpulkan website tersebut dan bagaimana mereka akan menggunakan data tersebut.
                 </p>
             </div>
         </div>

@@ -5,6 +5,7 @@ use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RepositoryController;
 use App\Http\Controllers\TipeDokumenController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -35,6 +36,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/download-dokumen/{id}', [RepositoryController::class, 'download'])->name('repository.download');
     Route::resource('tipe', TipeDokumenController::class);
     Route::resource('profile', ProfileController::class);
+    Route::resource('users', UserController::class);
     Route::resource('repository', RepositoryController::class);
     Route::middleware(['admin'])->group(function () {
         Route::resource('faq', FAQController::class);
